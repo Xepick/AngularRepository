@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="HelloApp">
+
+    <head>
+        <title> Hello World </title>
+        <meta http-equiv="Content-Type" content="text/html; charset-utf-8"/>
+        <script src="angular-1.7.6/angular.min.js"></script>
+
+    </head>
+
+    <body>
+        <div ng-controller="helloCtrl">
+            <h2> Hello {{ named }} </h2>
+            <h2> Hello <span ng-bind="named"></span>!</h2>
+        </div>
+ 
+    
+
+    <script>
+
+    var helloApp = angular.module('HelloApp', []);
+    helloApp.controller("helloCtrl",['$scope',function($scope){
+        console.log("test");
+        $scope.named="NOM";
+    }]);
+
+    </script>
+
+    </body>
+
+</html>

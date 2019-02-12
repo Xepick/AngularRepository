@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+
+    <head>
+        <title> Compteur Sauvegardé </title>
+        <meta http-equiv="Content-Type" content="text/html; charset-utf-8"/>
+        <script src="../angular-1.7.6/angular.min.js"></script>
+
+
+    </head>
+
+    <body>
+
+
+
+
+    <div ng-controller="TestCtrl">
+        <h2>Prenom</h2>
+        Votre prénom : <input type="text" ng-model="firstName"/>
+    </br></br>
+        <p>Hello {{firstName}} !</p>
+        <button ng-click="modifyFirstName()">Modifier le nom</button>
+    </div>
+
+    <div ng-controller="Test2Ctrl">
+        <h2> Controller 2</h2>
+        Hello {{firstName}} !
+    </div>
+
+
+   
+    </body>
+
+    <script>
+    //le scope du controleur 1 -> la première div
+    // le scope du controleur 2 -> la deuxième div
+    // là où on met les ng-controller, c'est un scope à chaque fois
+
+    var todoApp= angular.module('todoApp', []);
+
+    todoApp.controller('TestCtrl', ['$scope', function($scope){
+        $scope.modifyFirstName=function(){
+            $scope.firstName='test';
+        }
+    }]);
+    
+    todoApp.controller('Test2Ctrl', ['$scope', function($scope){
+        $scope.firstName="JE SUIS LE NOM 2";
+    }]);
+
+    </script>
+
+
+
+
+</html>

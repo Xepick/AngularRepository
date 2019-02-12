@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script src="js/test.js"></script>
+</head>
+
+<body>
+
+    <!--<img id="myImage" src="skullomania1.jpg" style="width:300px;height:200px"/> -->
+    <form id="monform" onsubmit="event.preventDefault()">
+    <p> Sexe : 
+        <input type="radio" id="radiob1" name="radiob"></input> Homme
+        <input type="radio" id="radiob2" name=radiob></input> Femme
+    </p>
+
+    <p>Nom: <input type="text" id="nom" class="checkable" ></input></p>
+    <p>Prenom : <input type="text" id="prenom" class="checkable"></input></p>
+
+    <p>Password : <input type="password" id="pass1" class="checkable"></input></p>
+    <p>Password(confirmation): <input type="password" id="pass2" class="checkable"></input> </p>
+
+    <p>
+        Pays : <SELECT name="maliste" size="1">
+        <option>Angleterre</option>
+        <option>France</option>    
+        <option>Belgique</option>
+        <option>Suede</option>
+        </SELECT>
+    </p>
+    <p><input type="checkbox" id="spam"></input> Please spam me </p>
+
+    <button onclick="checkSubmit()">M'inscrire</button>
+    <button onclick=Reset()>Reset le formulaire</button>
+
+  
+
+</form>
+
+
+</body>
+</html>

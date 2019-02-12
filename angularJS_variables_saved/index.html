@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="counterApp">
+
+    <head>
+        <title> Compteur Sauvegardé </title>
+        <meta http-equiv="Content-Type" content="text/html; charset-utf-8"/>
+        <script src="angular-1.7.6/angular.min.js"></script>
+        <script src="counterSaved.js"> </script>
+
+
+    </head>
+
+    <body ng-controller="CounterSavedCtrl">
+
+        <button ng-click="increment()">Incrementer et sauvegarder</button>
+        count : {{counter}}
+
+    </body>
+
+</html>
