@@ -13,7 +13,7 @@
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
-.angular-1.7.6/*
+angular-1.7.6/
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
