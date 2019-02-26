@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html ng-app="ListeAPP">
+
+    <head>
+        <title> Hello World </title>
+        <meta http-equiv="Content-Type" content="text/html; charset-utf-8"/>
+        <script src="angular-1.7.6/angular.min.js"></script>
+        <script src="Liste.js"></script>
+
+    </head>
+
+    <body ng-controller="TodoCtrl">
+
+        <form ng-submit="addTask()">
+
+            Ajouter la task : <input type="text" ng-model="taskname"/>
+            <input type="submit" value="Ajouter">
+        </form>
+
+        <div ng-repeat="ta in taskSet">
+            + {{ta.taskname}}
+
+        </div>
+    </body>
+
+
+
+
+</html>
