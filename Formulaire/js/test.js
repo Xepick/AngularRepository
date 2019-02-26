@@ -8,6 +8,7 @@ function Reset()
     {
         champDocument[i].value="";
     }
+    //
     //console.log(champDocument);
     document.getElementById("radiob1").checked=false;
     document.getElementById("radiob2").checked=false;
